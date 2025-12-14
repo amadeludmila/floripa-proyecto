@@ -1,0 +1,552 @@
+/* ESTILOS PARA HOME Y TODAS LAS CLASES QUE TENGAN HOME*/
+.home .hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.home .hero img {
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.primer-contenido {
+  background-color: #05242b;
+  color: #ffffff;
+}
+/* --- Texto más grande para las secciones informativas --- */
+.sobre-floripa p,
+.sobre-floripa-invertida p {
+  font-size: 1.1rem;
+  line-height: 1.9rem;
+}
+.sobre-floripa h2,
+.sobre-floripa-invertida h2 {
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+.btn-playera {
+  background-color: #05242b;
+  border: none;
+  color: white;
+  padding: 12px 28px;
+  font-size: 1.15rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn-playera:hover {
+  background-color: #1c849b;
+}
+
+.galeria-section {
+  background-color: #f0f5f5;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.logo-img {
+  height: 55px;
+  width: auto;
+}
+
+/* MAPA HOME  */
+.mapa-floripa-section {
+  border-top: 2px solid #c5e7ea;
+  border-bottom: 2px solid #c5e7ea;
+}
+
+.container-fondo {
+  background-color: #05242b;
+  height: 90vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.section-primer-titulo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #05242b;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.section-title {
+  padding: 10px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #beeaf7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.section-desc {
+  max-width: 650px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #96d7e9;
+}
+
+.mapa-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border: 0;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.15);
+}
+@media (max-width: 768px) {
+  .mapa-container iframe {
+    height: 300px;
+  }
+}
+
+/*Galería tipo revista*/
+.grid-galeria {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 250px 250px;
+  gap: 10px;
+}
+.grid-galeria img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.item1 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+}
+.item2 {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+.item3 {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+.item4 {
+  grid-column: 1 / 3;
+  grid-row: 3 / 4;
+  height: 250px;
+}
+
+.galeria-section {
+  background-color: #ffffff;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media (max-width: 768px) {
+  .grid-galeria {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .item1,
+  .item2,
+  .item3,
+  .item4 {
+    grid-column: 1 / 2 !important;
+    grid-row: auto !important;
+    height: auto;
+  }
+
+  .grid-galeria img {
+    height: 260px; /* tamaño cómodo para celular */
+    object-fit: cover;
+    width: 100%;
+  }
+}
+
+/*INDEX PLAYA */
+
+.primera-seccion {
+  background-color: #ffffff;
+  color: #000000;
+}
+.playa-box {
+  background: #0d3e58;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.playa-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.playa-nombre {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 10px 0;
+  flex-grow: 0;
+}
+
+.playa-texto {
+  flex-grow: 1;
+  font-size: 1rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.btn-playa {
+  background-color: #ffffff;
+  color: rgb(46, 94, 56);
+  border-radius: 8px;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.btn-playa:hover {
+  background-color: #133e38;
+}
+
+.secciones-playa {
+  background-color: #163d50;
+  color: white;
+}
+
+.secciones {
+  background-color: #133e38;
+  color: white;
+  padding: 40px 0;
+}
+
+.gastro-tipica-page {
+  background-color: #f9fbf7;
+}
+
+.gastro-tipica-title {
+  font-size: 2.7rem;
+  color: #3e6b52;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.gastro-tipica-intro {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  color: #4f7b63;
+}
+
+.gastro-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.gastro-img {
+  width: 85%;
+  border-radius: 16px;
+  display: block;
+  margin: 0 auto 20px;
+  object-fit: cover;
+}
+
+.gastro-subtitle2 {
+  font-size: 1.7rem;
+  color: #305943;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.mini-card {
+  background: #f4f8f3;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.gastro-list li {
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+  color: #3f5144;
+}
+
+/*INDEX SENDEROS*/
+
+.travel-hero {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.travel-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.travel-hero-overlay {
+  font-family: sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.travel-hero-overlay h1 {
+  position: relative;
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+
+.travel-hero-btn {
+  padding: 10px 28px;
+  border-radius: 5px;
+  background: #168574;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.travel-hero-btn:hover {
+  background: #082c22;
+  color: white;
+}
+
+.travel-hero-overlay h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 1.5px;
+  background-color: white;
+  transition: width 0.4s ease;
+}
+
+.travel-hero-overlay h1:hover::after {
+  width: 100%;
+}
+
+/* 
+   CARDS TRAVEl
+*/
+.travel-cards-section {
+  background: #ffffff;
+}
+
+.travel-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.12);
+  padding-bottom: 25px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.travel-card:hover {
+  transform: translateY(-5px);
+}
+
+.travel-card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.travel-card-title {
+  font-size: 1.3rem;
+  margin: 20px 0 10px;
+  font-weight: 700;
+}
+
+.travel-card-text {
+  font-size: 1rem;
+  padding: 0 20px;
+  color: #555;
+}
+
+.travel-card-btn {
+  background: #168574;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 6px;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.travel-card-btn:hover {
+  background: #082c22;
+  color: white;
+}
+
+/* SECCIÓN GASTRONOMÍA  */
+.gastro-seccion {
+  display: flex;
+  flex-direction: column;
+}
+
+.gastro-item {
+  padding: 60px 20px;
+}
+
+.gastro-bg1 {
+  background-color: #392e1d;
+}
+
+.gastro-bg2 {
+  background-color: #e3ead7;
+}
+
+.gastro-contenido {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.gastro-invertido {
+  flex-direction: row-reverse;
+}
+
+.gastro-img img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.gastro-texto {
+  max-width: 600px;
+  color: white;
+}
+
+.gastro-texto h2 {
+  font-size: 2rem;
+  color: #305943;
+  margin-bottom: 15px;
+}
+
+.gastro-texto p {
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  color: #2a4c36;
+}
+.gastro-texto-color {
+  color: #e7dede;
+}
+
+.galeria {
+  background-color: #f9fbf7;
+}
+
+@media (max-width: 768px) {
+  .gastro-contenido {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .gastro-invertido {
+    flex-direction: column;
+  }
+
+  .gastro-img img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* variables de colores */
+:root {
+  --verde-claro: #e6f2ea;
+  --verde-medio: #2f6f4e;
+  --verde-oscuro: #1f4d3a;
+  --texto-gris: #4f6f5d;
+}
+
+/* Fondo general */
+.bg-verde {
+  background-color: var(--verde-claro);
+  font-family: sans-serif;
+}
+
+/* Card presentación */
+.card-presentacion {
+  width: 22rem;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+}
+
+/* Imagen */
+.card-presentacion img {
+  height: 260px;
+  object-fit: cover;
+}
+
+/* Título */
+.card-presentacion .card-title {
+  color: var(--verde-medio);
+  font-weight: 600;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+/* Texto */
+.card-presentacion .card-text {
+  color: var(--texto-gris);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/*  FOOTER*/
+.footer {
+  background-color: #c8d0cc;
+  padding: 40px 0;
+}
+
+.footer a {
+  color: #2f5d50;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-mail,
+.footer-link {
+  margin: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+  .footer-simple {
+    flex-direction: column;
+    align-items: center;
+  }
+}

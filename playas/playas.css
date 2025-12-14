@@ -1,0 +1,237 @@
+/* =====================================================
+   VARIABLES POR PLAYA (colores)
+===================================================== */
+
+/* ARMAÇÃO */
+body.armacao {
+  --color-principal: #2f7f7a;
+  --color-secundario: #f2d7a1;
+  --color-fondo: #eef6f5;
+}
+
+/* CAMPECHE */
+body.campeche {
+  --color-principal: #1d3557;
+  --color-secundario: #e63946;
+  --color-fondo: #edf2f4;
+}
+
+/* MATADEIRO */
+body.matadeiro {
+  --color-principal: #2a9d8f;
+  --color-secundario: #e76f51;
+  --color-fondo: #f0f7f4;
+}
+
+/* JOAQUINA */
+body.joaquina {
+  --color-principal: #003049;
+  --color-secundario: #f77f00;
+  --color-fondo: #f6f6f6;
+}
+
+/* =====================================================
+   ESTILOS GENERALES
+===================================================== */
+
+body {
+  font-family: sans-serif;
+  background: var(--color-fondo);
+  color: #1a1a1a;
+}
+
+.logo-img {
+  height: 36px;
+}
+
+/* =====================================================
+   HERO (estructura común)
+===================================================== */
+
+.playa-hero {
+  height: 65vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* Overlay */
+.playa-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.55)
+  );
+}
+
+/* Texto del hero */
+.hero-content {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  color: #fff;
+  z-index: 2;
+}
+
+.playa-hero h1 {
+  font-family: sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.playa-hero p.lead {
+  max-width: 560px;
+}
+
+/* =====================================================
+   HERO – IMÁGENES POR PLAYA
+===================================================== */
+
+body.armacao .playa-hero {
+  background-image: url("/assets/img/playas/armacao1.jpg");
+}
+
+body.campeche .playa-hero {
+  background-image: url("/assets/img/playas/campeche3.jpg");
+}
+
+body.matadeiro .playa-hero {
+  background-image: url("/assets/img/playas/matadeiro4.jpg");
+}
+
+body.joaquina .playa-hero {
+  background-image: url("/assets/img/playas/joaquina2.jpg");
+}
+
+/* =====================================================
+   TITULOS
+===================================================== */
+
+h2,
+h3,
+h5 {
+  font-family: sans-serif;
+  color: var(--color-principal);
+}
+
+/* =====================================================
+   BOTONES
+===================================================== */
+
+.btn-playa {
+  background: var(--color-principal);
+  color: #fff;
+  padding: 10px 22px;
+  border-radius: 30px;
+  text-decoration: none;
+  border: none;
+}
+
+.btn-playa:hover {
+  background: var(--color-secundario);
+  color: #fff;
+}
+
+/* =====================================================
+   INFO / MAPA
+===================================================== */
+
+.info-playa p {
+  font-size: 1.05rem;
+}
+
+.mapa-info iframe {
+  border-radius: 12px;
+}
+
+/* =====================================================
+   ACTIVIDADES
+===================================================== */
+
+.actividad-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* =====================================================
+   SERVICIOS / CONSEJOS
+===================================================== */
+
+.servicios {
+  background: var(--color-principal);
+  color: #fff;
+}
+
+.servicios h2 {
+  color: #fff;
+}
+
+.servicio-item {
+  background: rgba(255, 255, 255, 0.95);
+  color: #1a1a1a;
+  border-radius: 12px;
+}
+
+/* =====================================================
+   OTRAS PLAYAS
+===================================================== */
+
+.otras-playas h3 {
+  font-family: 'Playfair Display', serif;
+  color: var(--color-principal);
+}
+
+.otras-playas .btn-playa {
+  margin: 6px;
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+  background: #0b1720;
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 768px) {
+  .playa-hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content {
+    left: 20px;
+    bottom: 20px;
+  }
+
+  .carousel-item img {
+    height: 260px;
+  }
+}
+.footer {
+  background-color: #c8d0cc; /* tono suave, natural */
+  padding: 40px 0;
+}
+
+.footer a {
+  color: #2f5d50;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-mail,
+.footer-link {
+  margin: 0.5rem 0;
+}

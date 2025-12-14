@@ -1,0 +1,193 @@
+/* ==================================================
+   BASE
+================================================== */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  background-color: #e2e9dc;
+  margin: 0;
+}
+
+.logo-img {
+  height: 55px; /* ajustá a tu gusto */
+  width: auto; /* mantiene proporciones */
+}
+.home .hero {
+  position: relative;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.home .hero img {
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+}
+.travel-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.travel-hero-overlay {
+  font-family: "Inter", sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+.travel-hero-overlay h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+/* ==================================================
+   INTRO CONTACTO
+================================================== */
+
+.contact-intro {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 50px 40px;
+  text-align: center;
+  background: linear-gradient(135deg, #0b3a3f, #0f5c63);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.contact-intro h1 {
+  margin: 0;
+  font-size: 2.1rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #ffffff;
+}
+
+/* ==================================================
+   FORMULARIO
+================================================== */
+
+form {
+  padding: 50px 55px;
+  margin: 40px auto;
+  width: 450px;
+
+  background-color: #307879;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+
+form h2 {
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+
+/* ==================================================
+   INPUTS
+================================================== */
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+label {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+
+  border-radius: 15px;
+  border: 2px solid #173f46;
+  background-color: #d2dbdd;
+  color: #1e3139;
+  outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #888;
+}
+
+/* ==================================================
+   BOTÓN
+================================================== */
+
+.btn {
+  margin: 20px auto 0;
+  display: block;
+  padding: 12px 30px;
+
+  background: linear-gradient(135deg, #005f6b, #008c9e);
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 600;
+
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #008d7f, #00a9a4);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+}
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
+@media (max-width: 768px) {
+  .contact-intro {
+    padding: 35px 25px;
+  }
+
+  .contact-intro h1 {
+    font-size: 1.6rem;
+  }
+
+  form {
+    width: 100%;
+    padding: 40px 25px;
+  }
+}
+.footer {
+  background-color: #c8d0cc; /* tono suave, natural */
+  padding: 40px 0;
+}
+
+.footer a {
+  color: #2f5d50;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-mail,
+.footer-link {
+  margin: 0.5rem 0;
+}

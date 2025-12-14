@@ -1,0 +1,285 @@
+/* =========================================
+   JUEGO DE PREGUNTAS – FLORIANÓPOLIS
+========================================= */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  background-color: #e2e9dc;
+  margin: 0;
+}
+
+.logo-img {
+  height: 55px; /* ajustá a tu gusto */
+  width: auto; /* mantiene proporciones */
+}
+.home .hero {
+  position: relative;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.home .hero img {
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+}
+.travel-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.travel-hero-overlay {
+  font-family: "Inter", sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+.travel-hero-overlay h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+/* CONTENEDOR CENTRAL */
+.juego-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* TARJETA DEL JUEGO */
+.juego-container {
+  background: #307879;
+  max-width: 650px;
+  width: 100%;
+  padding: 40px 45px;
+  border-radius: 22px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+  text-align: center;
+}
+
+/* TÍTULOS */
+.juego-titulo {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #0f5c63;
+  margin-bottom: 10px;
+}
+
+.juego-subtitulo {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+/* PANTALLA DE INICIO */
+#pantalla-inicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#pantalla-inicio h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #0affc2;
+}
+
+/* BOTÓN JUGAR */
+#btn-jugar {
+  margin-top: 20px;
+  padding: 14px 40px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+  background-color: #1a4a46;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+#btn-jugar:hover {
+  transform: translateY(-3px);
+  background-color: #39c1d3;
+}
+
+/* CONTENEDOR DEL JUEGO */
+#juego {
+  margin-top: 0;
+}
+
+/* PREGUNTA */
+.pregunta {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #0affc2;
+  margin-bottom: 20px;
+}
+
+/* OPCIONES */
+.opcion {
+  display: block;
+  width: 100%;
+  padding: 14px 18px;
+  margin-bottom: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  background: #f1f6f6;
+  border: 2px solid transparent;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.opcion:hover {
+  background: #e1f1f1;
+  transform: scale(1.02);
+}
+
+/* RESPUESTAS */
+.opcion.correcta {
+  background: #6db88d;
+  border-color: #2ecc71;
+  color: #145a32;
+}
+
+.opcion.incorrecta {
+  background: #fde2e2;
+  border-color: #e74c3c;
+  color: #7b241c;
+}
+
+/* RESULTADO */
+#resultado {
+  margin-top: 30px;
+}
+
+.resultado-box {
+  background-color: #0a446a;
+  color: #ffffff;
+  padding: 35px 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+.resultado-box p {
+  font-size: 1.3rem;
+  margin-bottom: 18px;
+}
+
+/* BOTÓN REINICIAR */
+.btn-diseño {
+  padding: 12px 32px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 30px;
+  background: #ffffff;
+  color: #0f5c63;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-reiniciar:hover {
+  background: #e9f7f7;
+  transform: translateY(-2px);
+}
+/* Footer */
+.footer-simple {
+  background-color: #bbbbbb;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer-simple h5 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #03040f;
+}
+
+.footer-simple p {
+  font-size: 0.95rem;
+  color: #03040f;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.footer-simple .footer-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #120a2c;
+  transition: color 0.3s;
+}
+
+.footer-simple .footer-link:hover {
+  color: #03040f;
+}
+/* Redes sociales */
+.footer-simple .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  font-size: 1.5rem;
+}
+
+.footer-simple .social-icons a {
+  color: #333;
+  transition: color 0.3s;
+}
+
+.footer-simple .social-icons a:hover {
+  color: #03040f;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .juego-container {
+    padding: 30px 25px;
+  }
+
+  .juego-titulo {
+    font-size: 2rem;
+  }
+
+  .pregunta {
+    font-size: 1.2rem;
+  }
+}
+.footer {
+  background-color: #c8d0cc; /* tono suave, natural */
+  padding: 40px 0;
+}
+
+.footer a {
+  color: #2f5d50;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-mail,
+.footer-link {
+  margin: 0.5rem 0;
+}
