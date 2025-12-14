@@ -79,12 +79,11 @@
       </div>
     </nav>
 
-    <!-- Hero -->
-    <header class="hero position-relative">
+    <header class="contact-intro position-relative">
       <img
         src="../assets/img/general/contactohero.jpg"
         alt="Playa fondo"
-        class="hero-img"
+        class="travel-hero-img"
       />
       <div class="travel-hero-overlay">
         <h1>¡CONTACTANOS!</h1>
@@ -92,33 +91,31 @@
     </header>
 
     <!-- Formulario -->
-    <main class="container my-5">
-      <form id="formulario" action="https://formspree.io/f/xldqpjoq" method="POST" class="p-4 border rounded shadow-sm bg-white">
-        <h2 class="mb-4 text-center">Completá con tus datos para más información</h2>
+        <main class="container my-5">
+      <form id="formulario" action="https://formspree.io/f/xldqpjoq" method="POST">
+        <h2>Completá con tus datos para más información</h2>
 
-        <div class="mb-3">
-          <label for="nombre" class="form-label">Nombre:</label>
-          <input type="text" id="nombre" name="nombre" class="form-control" required />
+        <div class="input-group mb-3">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
         </div>
 
-        <div class="mb-3">
-          <label for="apellido" class="form-label">Apellido:</label>
-          <input type="text" id="apellido" name="apellido" class="form-control" required />
+        <div class="input-group mb-3">
+          <label for="apellido">Apellido:</label>
+          <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" required />
         </div>
 
-        <div class="mb-3">
-          <label for="email" class="form-label">Correo electrónico:</label>
-          <input type="email" id="email" name="email" class="form-control" required />
+        <div class="input-group mb-3">
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required />
         </div>
 
-        <div class="mb-3">
-          <label for="mensaje" class="form-label">Mensaje:</label>
-          <textarea id="mensaje" name="mensaje" rows="5" class="form-control" placeholder="Hola, quiero más info!"></textarea>
+        <div class="input-group mb-3">
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Hola, quiero más info!"></textarea>
         </div>
 
-        <div class="text-center">
-          <input class="btn btn-primary" type="submit" value="Enviar" />
-        </div>
+        <input class="btn" type="submit" value="Enviar" />
       </form>
     </main>
 
