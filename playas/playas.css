@@ -91,19 +91,20 @@ body {
 ===================================================== */
 
 body.armacao .playa-hero {
-  background-image: url("/assets/img/playas/armacao1.jpg");
+   background-image: url("../assets/img/playas/armacao1.jpg");
 }
 
 body.campeche .playa-hero {
-  background-image: url("/assets/img/playas/campeche3.jpg");
+  background-image: url("../assets/img/playas/campeche3.jpg");
 }
 
 body.matadeiro .playa-hero {
-  background-image: url("/assets/img/playas/matadeiro4.jpg");
+  background-image: url("../assets/img/playas/matadeiro4.jpg");
+
 }
 
 body.joaquina .playa-hero {
-  background-image: url("/assets/img/playas/joaquina2.jpg");
+  background-image: url("../assets/img/playas/joaquina2.jpg");
 }
 
 /* =====================================================
