@@ -10,19 +10,20 @@ body {
 }
 
 .logo-img {
-  height: 55px; /* ajustá a tu gusto */
-  width: auto; /* mantiene proporciones */
+  height: 55px; 
+  width: auto; 
 }
-.home .hero {
+.contacto .hero-contacto {
   position: relative;
   height: 70vh;
+  width: 100%;
   overflow: hidden;
 }
 
-.home .hero img {
-  object-fit: cover;
+.contacto .hero-contacto img {
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  object-fit: cover;
 }
 .travel-hero-img {
   width: 100%;

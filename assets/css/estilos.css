@@ -200,18 +200,21 @@
   margin-bottom: 20px;
 }
 
-.btn-playa {
+a.btn.btn-playa {
   background-color: #ffffff;
   color: rgb(46, 94, 56);
   border-radius: 8px;
   padding: 8px 16px;
   text-decoration: none;
-  transition: 0.3s ease;
+  border: none;
+  transition: all 0.3s ease;
 }
 
-.btn-playa:hover {
+a.btn.btn-playa:hover {
   background-color: #133e38;
+  color: #ffffff;
 }
+
 
 .secciones-playa {
   background-color: #163d50;
