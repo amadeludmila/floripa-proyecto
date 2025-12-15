@@ -74,7 +74,6 @@ const pantallaInicio = document.getElementById("pantalla-inicio");
 const btnJugar = document.getElementById("btn-jugar");
 const juegoDiv = document.getElementById("juego");
 const resultadoDiv = document.getElementById("resultado");
-
 btnJugar.addEventListener("click", iniciarJuego);
 
 function iniciarJuego() {
