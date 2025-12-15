@@ -187,10 +187,6 @@ body {
   border-radius: 10px;
 }
 
-/* ==================================================
-   RESPONSIVE
-================================================== */
-
 @media (max-width: 768px) {
   .trail-tech {
     grid-template-columns: 1fr;
@@ -224,3 +220,23 @@ body {
 .footer-link {
   margin: 0.5rem 0;
 }
+
+.trail-difficulty,
+.map-note a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px; 
+}
+
+@media (max-width: 576px) {
+  .trail-difficulty {
+    font-size: 0.95rem;
+    padding: 10px 18px;
+  }
+
+  .map-note {
+    font-size: 0.95rem;
+  }
+}
+
