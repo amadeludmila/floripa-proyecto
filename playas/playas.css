@@ -1,6 +1,4 @@
-/* =====================================================
-   VARIABLES POR PLAYA (colores)
-===================================================== */
+/*variables */
 
 /* ARMAÇÃO */
 body.armacao {
@@ -30,10 +28,6 @@ body.joaquina {
   --color-fondo: #f6f6f6;
 }
 
-/* =====================================================
-   ESTILOS GENERALES
-===================================================== */
-
 body {
   font-family: sans-serif;
   background: var(--color-fondo);
@@ -43,10 +37,6 @@ body {
 .logo-img {
   height: 36px;
 }
-
-/* =====================================================
-   HERO (estructura común)
-===================================================== */
 
 .playa-hero {
   height: 65vh;
@@ -60,11 +50,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0.2),
-    rgba(0, 0, 0, 0.55)
-  );
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.55));
 }
 
 /* Texto del hero */
@@ -86,12 +72,8 @@ body {
   max-width: 560px;
 }
 
-/* =====================================================
-   HERO – IMÁGENES POR PLAYA
-===================================================== */
-
 body.armacao .playa-hero {
-   background-image: url("../assets/img/playas/armacao1.jpg");
+  background-image: url("../assets/img/playas/armacao1.jpg");
 }
 
 body.campeche .playa-hero {
@@ -100,16 +82,11 @@ body.campeche .playa-hero {
 
 body.matadeiro .playa-hero {
   background-image: url("../assets/img/playas/matadeiro4.jpg");
-
 }
 
 body.joaquina .playa-hero {
   background-image: url("../assets/img/playas/joaquina2.jpg");
 }
-
-/* =====================================================
-   TITULOS
-===================================================== */
 
 h2,
 h3,
@@ -117,10 +94,6 @@ h5 {
   font-family: sans-serif;
   color: var(--color-principal);
 }
-
-/* =====================================================
-   BOTONES
-===================================================== */
 
 .btn-playa {
   background: var(--color-principal);
@@ -136,10 +109,6 @@ h5 {
   color: #fff;
 }
 
-/* =====================================================
-   INFO / MAPA
-===================================================== */
-
 .info-playa p {
   font-size: 1.05rem;
 }
@@ -148,20 +117,12 @@ h5 {
   border-radius: 12px;
 }
 
-/* =====================================================
-   ACTIVIDADES
-===================================================== */
-
 .actividad-card {
   background: #fff;
   border-radius: 14px;
   padding: 12px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
-
-/* =====================================================
-   SERVICIOS / CONSEJOS
-===================================================== */
 
 .servicios {
   background: var(--color-principal);
@@ -178,30 +139,26 @@ h5 {
   border-radius: 12px;
 }
 
-/* =====================================================
-   OTRAS PLAYAS
-===================================================== */
-
 .otras-playas h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   color: var(--color-principal);
 }
 
 .otras-playas .btn-playa {
   margin: 6px;
 }
+@media (max-width: 576px) {
+  .otras-playas .btn-playa {
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+}
 
-/* =====================================================
-   FOOTER
-===================================================== */
 
 footer {
   background: #0b1720;
 }
-
-/* =====================================================
-   RESPONSIVE
-===================================================== */
 
 @media (max-width: 768px) {
   .playa-hero h1 {
